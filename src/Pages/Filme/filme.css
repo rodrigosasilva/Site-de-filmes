@@ -1,0 +1,17 @@
+.filme{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 900px;
+    color: #FFF;
+}
+
+.filme img{
+    height: 300px;
+    width: 700px;
+    border-radius: 8px;
+}
+
+.filme a{
+    color: #FFF;
+}
