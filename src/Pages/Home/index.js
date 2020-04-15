@@ -20,13 +20,14 @@ class Home extends Component{
         fetch(url)
         .then((r) => r.json())
         .then((json) => {
-            this.setState({filmes: json});
+            this.setState({filme: json});
         })
     }
 
     render(){
         return(
             <div className="container">
+                <img src='../../img/BvS'/>
                 <div className="listaF">
                     {this.state.filmes.map((filme) => {
                         return(
