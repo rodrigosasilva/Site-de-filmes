@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './home.css';
-import imgInitial from '../../img/Avengers-Endgame2.jpg';
+import imgInitial from '../../img/Avengers-Endgame.jpg';
 
 class Home extends Component{
 
