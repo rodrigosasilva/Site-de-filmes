@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import {Link} from 'react-router-dom';
 import './home.css';
+import imgInitial from '../../img/Avengers-Endgame2.jpg';
 
 class Home extends Component{
 
     constructor(props){
         super(props);
         this.state = {
-            filmes: []
+            filme: []
         };
     }
 
@@ -27,17 +28,19 @@ class Home extends Component{
     render(){
         return(
             <div className="container">
-                <img src='../../img/BvS'/>
+                <img className = "imgInitial" src = {imgInitial} alt = "imagem home"/>
                 <div className="listaF">
-                    {this.state.filmes.map((filme) => {
-                        return(
-                            <article key = {filme.id}>
-                                <strong>{filme.nome}</strong>
-                                <img src={filme.foto}/>
-                                <Link to = {`/filme/${filme.id}`} >Acessar</Link>
-                            </article>
-                        )
-                    })}
+                    <ul>
+                        {this.state.filme.map((filme) => (
+                            <li key = {filme.id}>
+                                <div className = "teste">
+                                    <strong>{filme.nome}</strong>
+                                    <img className = "imgIcon" src={filme.foto} alt = "Filme"/>
+                                    <Link to = {`/filme/${filme.id}`} >Acessar</Link>
+                                </div>
+                            </li>
+                        ))}
+                </ul>
                 </div>
             </div>
         )

@@ -11,21 +11,26 @@
     align-items: flex-start;
     justify-items: flex-start;
 }
-.listaF article{
+.teste{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin: 15px;
-
 }
+.container ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+    list-style: none;
+}
+
+
 .listaF strong{
     padding-bottom: 15px;
     color: #FFF;
     font-size: 20px;
 }
 
-.listaF article a{
+.listaF a{
     text-decoration: none;
     text-align: center;
     color: white;
@@ -35,7 +40,11 @@
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
 }
-img{
+.imgIcon{
     max-height: 300px;
     width: 300px;
+}
+.imgInitial{
+    width: 100%;
+    height: 600px;
 }

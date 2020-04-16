@@ -27,14 +27,10 @@ class Header extends Component{
     render(){
         return(
             <div className = "header">
-                <div className = "BotaoHome">
-                    <Link to="/">
-                        <h1>Home</h1>
-                    </Link>
-                </div>
-                <div className = "Pesquisa">
+                <Link className = "BotaoHome" to = "/">Home</Link>
+                <div className = "Pesquisar">
                     <input id='search' className='search' placeholder='Pesquisar' value={this.state.filme.nome} onChange={(e) => 
-                        this.setState({filme: e.target.value})}></input>
+                            this.setState({filme: e.target.value})}></input>
                 </div>
             </div>
         )
